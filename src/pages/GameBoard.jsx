@@ -10,7 +10,7 @@ function GameBoard() {
     fetch(`/api/characters/${id}`)
       .then(res => res.json())
       .then(character => setCharacter(character))
-  })
+  }, [])
   return (
     <div className="container">
       <div className="row">
