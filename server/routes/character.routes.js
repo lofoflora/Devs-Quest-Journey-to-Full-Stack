@@ -8,7 +8,7 @@ router.get("/", async (req, res) => {
     const characters = await Character.findAll();
     res.json(characters);
   } catch (err) {
-    console.error(err)
+    console.error(err);
     res.status(500).json({ message: err.message });
   }
 });
