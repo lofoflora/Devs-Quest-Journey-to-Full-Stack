@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import SelectCharacter from "./pages/SelectCharacter"
 import CreateCharacter from './pages/CreateCharacter'
+import CreateItem from './pages/CreateItem';
 import GameBoard from './pages/GameBoard'
 import { useNavigate } from 'react-router';
 import "./app.css"
@@ -26,6 +27,7 @@ function App() {
         <Route index element={<SelectCharacter />} />
         <Route path="/character/:id" element={<GameBoard />} />
         <Route path="/create-character" element={<CreateCharacter />} />
+        <Route path="/create-item" element={<CreateItem/>} />
       </Routes>
     </>
   )

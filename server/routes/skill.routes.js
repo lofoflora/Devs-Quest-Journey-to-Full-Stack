@@ -3,7 +3,6 @@ import { Skills } from "../models/index.js";
 
 const router = Router();
 
-
 router.get("/skills", async (req, res) => {
   try {
     const skills = await Skills.findAll();

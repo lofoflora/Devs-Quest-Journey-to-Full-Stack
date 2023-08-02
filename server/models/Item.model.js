@@ -14,6 +14,11 @@ const Item = database.define("Item", {
     allowNull: false,
   },
 
+  description: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+
   bonus: {
     type: DataTypes.INTEGER,
     allowNull: false,
