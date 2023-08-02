@@ -1,8 +1,12 @@
 import React from 'react'
 
-function Item({item}) {
+function Item({ item }) {
   return (
-    <div>item.name</div>
+    <span style={{ marginRight: 4 }}>
+      <span className="badge badge-success">
+        {item?.name}
+      </span>x{item?.CharacterItem?.quantity}
+    </span>
   )
 }
 

@@ -14,7 +14,10 @@ const InventoryCard = ({ charId }) => {
   return (
     <div className="card">
       <div className="card-body">
-        {items.map((item, index) => <Item item={item} key={index} />)}
+        <div className="card-title">Inventaire</div>
+        <div className="card-text">
+          {items.map((item, index) => <Item item={item} key={index} />)}
+        </div>
       </div>
     </div>
   );
