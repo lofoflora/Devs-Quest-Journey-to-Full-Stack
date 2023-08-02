@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import SelectCharacter from "./pages/SelectCharacter"
-import CreateCharacter from './components/CreateCharacter'
+import CreateCharacter from './pages/CreateCharacter'
 import "./app.css"
 
 function App() {

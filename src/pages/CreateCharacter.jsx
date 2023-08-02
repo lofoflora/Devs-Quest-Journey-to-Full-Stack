@@ -8,16 +8,16 @@ function CreateCharacter() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    const character = { name, specialization };
-
-    fetch('/api/character', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(character),
-    })
-      .then(() => navigate('/'))
-      .catch((error) => console.error(error));
+    if (name && specialization) {
+      const character = { name, specialization };
+      fetch('/api/character', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(character),
+      })
+        .then(() => navigate('/'))
+        .catch((error) => console.error(error));
+    }
   }
 
   return (
