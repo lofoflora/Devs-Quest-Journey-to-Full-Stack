@@ -2,112 +2,160 @@ import React, { useState } from 'react';
 import Question from '../Question';
 
 const Epreuve2 = ({ onAnswer }) => {
-    const questions = [
-        {
-            text: 'Quelle est la différence entre "let", "const" et "var" pour déclarer des variables en JavaScript ?',
-            options: [
-              'let et const sont utilisés pour déclarer des variables avec une portée de bloc, tandis que var a une portée de fonction.',
-              'const est utilisé pour déclarer des variables dont la valeur ne peut pas être modifiée, tandis que let et var permettent de modifier la valeur de la variable.',
-              'let et const sont des mots-clés obsolètes en JavaScript et doivent être évités.',
-              'var est utilisé pour déclarer des variables avec une portée de bloc, tandis que let a une portée de fonction.'
-            ],
-            correctOption: 'let et const sont utilisés pour déclarer des variables avec une portée de bloc, tandis que var a une portée de fonction.'
-          },
-          {
-            text: 'Quelle méthode est utilisée pour envoyer une requête GET dans l\'API Fetch en JavaScript ?',
-            options: [
-              'fetch.get(url)',
-              'fetch(url, {method: "GET"})',
-              'fetch(url).method("GET")',
-              'fetch.method("GET", url)'
-            ],
-            correctOption: 'fetch(url, {method: "GET"})'
-          },
-          {
-            text: 'Quelle méthode est utilisée pour ajouter un nouvel élément à la fin d\'un tableau en JavaScript ?',
-            options: [
-              'array.push(newElement)',
-              'array.add(newElement)',
-              'array.insert(newElement)',
-              'array.append(newElement)'
-            ],
-            correctOption: 'array.push(newElement)'
-          },
-          {
-            text: 'Quelle est la fonction utilisée pour se connecter à une base de données MySQL en PHP ?',
-            options: [
-              'connect_db()',
-              'mysqli_connect()',
-              'pdo_connect()',
-              'mysql_connect()'
-            ],
-            correctOption: 'mysqli_connect()'
-          },
-          {
-            text: 'Comment déclarer une variable en PHP ?',
-            options: [
-              '$variable',
-              'variable = valeur',
-              'variable(valeur)',
-              'var variable'
-            ],
-            correctOption: '$variable'
-          },
-          {
-            text: 'Quelle est la méthode utilisée pour supprimer un élément spécifique d\'un tableau en PHP ?',
-            options: [
-              'array_delete(element)',
-              'array_remove(element)',
-              'array_splice(element)',
-              'unset(array[element])'
-            ],
-            correctOption: 'unset(array[element])'
-          },
-          {
-            text: 'Quelle est la différence entre "==" et "===" en JavaScript pour comparer des valeurs ?',
-            options: [
-              '"==" compare les valeurs sans vérifier le type, tandis que "===" compare les valeurs et le type de données.',
-              '"===" compare les valeurs sans vérifier le type, tandis que "==" compare les valeurs et le type de données.',
-              '"==" est utilisé pour comparer les chaînes de caractères, tandis que "===" est utilisé pour comparer les nombres.',
-              '"===" est utilisé pour comparer les chaînes de caractères, tandis que "==" est utilisé pour comparer les nombres.'
-            ],
-            correctOption: '"==" compare les valeurs sans vérifier le type, tandis que "===" compare les valeurs et le type de données.'
-          },
-          {
-            text: 'Quelle est la méthode utilisée pour inverser l\'ordre des éléments d\'un tableau en JavaScript ?',
-            options: [
-              'array.reverse()',
-              'array.invert()',
-              'array.flip()',
-              'array.switch()'
-            ],
-            correctOption: 'array.reverse()'
-          },
-          {
-            text: 'Comment afficher du texte "Hello World" en PHP ?',
-            options: [
-              'print "Hello World";',
-              'echo "Hello World";',
-              'console.log("Hello World");',
-              'printf("Hello World");'
-            ],
-            correctOption: 'echo "Hello World";'
-          },
-          {
-            text: 'Quelle méthode est utilisée pour envoyer des données à un serveur en utilisant AJAX en JavaScript ?',
-            options: [
-              'fetch(url)',
-              'axios.get(url)',
-              'sendRequest(url)',
-              'xmlhttprequest.open("POST", url)'
-            ],
-            correctOption: 'xmlhttprequest.open("POST", url)'
-          },
-      ];
+  const tasks = [
+    {
+      title: "Le Labyrinthe des Erreurs Inattendues",
+      summary: "Naviguer à travers un labyrinthe de bugs et d'erreurs inattendues en PHP et JavaScript. Trouver des solutions pour résoudre les bugs et avancer dans le labyrinthe."
+    },
+    {
+      title: "La Potion de Compatibilité des Navigateurs",
+      summary: "Créer une potion magique qui assure la compatibilité des scripts JavaScript avec tous les navigateurs. Tester la potion pour s'assurer qu'elle fonctionne correctement."
+    },
+    {
+      title: "Le Défi des Variables Énigmatiques",
+      summary: "Résoudre des énigmes complexes impliquant des variables mystérieuses en PHP et JavaScript. Utiliser les connaissances en programmation pour déchiffrer les variables et trouver les bonnes réponses."
+    },
+    {
+      title: "Le Combat des Boucles Infinies",
+      summary: "Repousser les boucles infinies qui menacent de bloquer le programme. Utiliser des stratégies pour éviter les boucles infinies et garantir un fonctionnement fluide du code."
+    },
+    {
+      title: "Le Rite des Fonctions Magiques",
+      summary: "Créer des fonctions magiques en PHP et JavaScript pour accomplir des tâches extraordinaires. Utiliser les fonctions pour automatiser des processus et rendre le code plus efficace."
+    },
+    {
+      title: "La Confrontation avec le Dragon de PHP",
+      summary: "Faire face à un dragon féroce créé en PHP. Utiliser les compétences en PHP pour résoudre les énigmes et vaincre le dragon."
+    },
+    {
+      title: "L'Épreuve des Conditions Perplexes",
+      summary: "Affronter des conditions complexes et déroutantes en PHP et JavaScript. Trouver des solutions pour gérer les conditions difficiles et obtenir les bons résultats."
+    },
+    {
+      title: "Le Mystère des Objets Ensorcelés",
+      summary: "Explorer les objets ensorcelés en PHP et JavaScript et comprendre leurs propriétés cachées. Utiliser les objets pour résoudre des problèmes de manière magique."
+    },
+    {
+      title: "La Course aux Algorithmes Magiques",
+      summary: "Participer à une course d'algorithmes en PHP et JavaScript. Optimiser les algorithmes pour obtenir les meilleures performances et gagner la course."
+    },
+    {
+      title: "Le Défi des Tableaux Enchantés",
+      summary: "Créer des tableaux enchantés en PHP et JavaScript pour organiser et manipuler des données. Résoudre des énigmes en utilisant les tableaux pour obtenir les bonnes réponses."
+    }
+  ];
+
+  const questions = [
+    {
+      text: 'Quelle est la différence entre "let", "const" et "var" pour déclarer des variables en JavaScript ?',
+      options: [
+        'let et const sont utilisés pour déclarer des variables avec une portée de bloc, tandis que var a une portée de fonction.',
+        'const est utilisé pour déclarer des variables dont la valeur ne peut pas être modifiée, tandis que let et var permettent de modifier la valeur de la variable.',
+        'let et const sont des mots-clés obsolètes en JavaScript et doivent être évités.',
+        'var est utilisé pour déclarer des variables avec une portée de bloc, tandis que let a une portée de fonction.'
+      ],
+      correctOption: 'let et const sont utilisés pour déclarer des variables avec une portée de bloc, tandis que var a une portée de fonction.'
+    },
+    {
+      text: 'Quelle méthode est utilisée pour envoyer une requête GET dans l\'API Fetch en JavaScript ?',
+      options: [
+        'fetch.get(url)',
+        'fetch(url, {method: "GET"})',
+        'fetch(url).method("GET")',
+        'fetch.method("GET", url)'
+      ],
+      correctOption: 'fetch(url, {method: "GET"})'
+    },
+    {
+      text: 'Quelle méthode est utilisée pour ajouter un nouvel élément à la fin d\'un tableau en JavaScript ?',
+      options: [
+        'array.push(newElement)',
+        'array.add(newElement)',
+        'array.insert(newElement)',
+        'array.append(newElement)'
+      ],
+      correctOption: 'array.push(newElement)'
+    },
+    {
+      text: 'Quelle est la fonction utilisée pour se connecter à une base de données MySQL en PHP ?',
+      options: [
+        'connect_db()',
+        'mysqli_connect()',
+        'pdo_connect()',
+        'mysql_connect()'
+      ],
+      correctOption: 'mysqli_connect()'
+    },
+    {
+      text: 'Comment déclarer une variable en PHP ?',
+      options: [
+        '$variable',
+        'variable = valeur',
+        'variable(valeur)',
+        'var variable'
+      ],
+      correctOption: '$variable'
+    },
+    {
+      text: 'Quelle est la méthode utilisée pour supprimer un élément spécifique d\'un tableau en PHP ?',
+      options: [
+        'array_delete(element)',
+        'array_remove(element)',
+        'array_splice(element)',
+        'unset(array[element])'
+      ],
+      correctOption: 'unset(array[element])'
+    },
+    {
+      text: 'Quelle est la différence entre "==" et "===" en JavaScript pour comparer des valeurs ?',
+      options: [
+        '"==" compare les valeurs sans vérifier le type, tandis que "===" compare les valeurs et le type de données.',
+        '"===" compare les valeurs sans vérifier le type, tandis que "==" compare les valeurs et le type de données.',
+        '"==" est utilisé pour comparer les chaînes de caractères, tandis que "===" est utilisé pour comparer les nombres.',
+        '"===" est utilisé pour comparer les chaînes de caractères, tandis que "==" est utilisé pour comparer les nombres.'
+      ],
+      correctOption: '"==" compare les valeurs sans vérifier le type, tandis que "===" compare les valeurs et le type de données.'
+    },
+    {
+      text: 'Quelle est la méthode utilisée pour inverser l\'ordre des éléments d\'un tableau en JavaScript ?',
+      options: [
+        'array.reverse()',
+        'array.invert()',
+        'array.flip()',
+        'array.switch()'
+      ],
+      correctOption: 'array.reverse()'
+    },
+    {
+      text: 'Comment afficher du texte "Hello World" en PHP ?',
+      options: [
+        'print "Hello World";',
+        'echo "Hello World";',
+        'console.log("Hello World");',
+        'printf("Hello World");'
+      ],
+      correctOption: 'echo "Hello World";'
+    },
+    {
+      text: 'Quelle méthode est utilisée pour envoyer des données à un serveur en utilisant AJAX en JavaScript ?',
+      options: [
+        'fetch(url)',
+        'axios.get(url)',
+        'sendRequest(url)',
+        'xmlhttprequest.open("POST", url)'
+      ],
+      correctOption: 'xmlhttprequest.open("POST", url)'
+    },
+  ];
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [showSummary, setShowSummary] = useState(true);
 
   const handleAnswer = (selectedOption) => {
+    if (showSummary) {
+      setShowSummary(false);
+    }
+
     const currentQuestion = questions[currentQuestionIndex];
     const isCorrect = selectedOption === currentQuestion.correctOption;
     onAnswer(isCorrect);
@@ -117,15 +165,27 @@ const Epreuve2 = ({ onAnswer }) => {
   };
 
   const currentQuestion = questions[currentQuestionIndex];
+  const currentTask = tasks[currentQuestionIndex];
 
   return (
     <div>
-      <h3>{currentQuestion.text}</h3>
-      <Question
-        question={currentQuestion}
-        options={currentQuestion.options}
-        onAnswer={handleAnswer}
-      />
+      {showSummary ? (
+        <div>
+          <h2>Épreuve 2 : "PHP et JavaScript : Le Chaos Programmé"</h2>
+          <p>{currentTask.summary}</p>
+          <button onClick={() => setShowSummary(false)}>Commencer l'épreuve</button>
+        </div>
+      ) : (
+        <div>
+          <h3>Tâche {currentQuestionIndex + 1} : "{currentTask.title}"</h3>
+          <h3>{currentQuestion.text}</h3>
+          <Question
+            question={currentQuestion}
+            options={currentQuestion.options}
+            onAnswer={handleAnswer}
+          />
+        </div>
+      )}
     </div>
   );
 };
