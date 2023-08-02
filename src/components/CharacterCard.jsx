@@ -4,7 +4,7 @@ const CharacterCard = ({ character }) => {
   const { avatar, name, level, specialization } = character;
 
   return (
-    <div className="card" style={{width: "18rem"}}>
+    <div className="card">
       <img src={avatar} className="card-img-top" alt={name} />
       <div className="card-body">
         <h5 className="card-title">{name}</h5>
