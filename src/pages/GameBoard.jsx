@@ -5,7 +5,7 @@ import InventoryCard from '../components/InventoryCard'
 
 function GameBoard() {
   let { id } = useParams();
-  let [character, setCharacter] = useState([]);
+  let [character, setCharacter] = useState({});
 
   useEffect(() => {
     fetch(`/api/characters/${id}`)

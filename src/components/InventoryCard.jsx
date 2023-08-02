@@ -7,7 +7,7 @@ const InventoryCard = ({ charId }) => {
   useEffect(() => {
     fetch(`/api/character/${charId}/items`)
       .then(res => res.json())
-      .then(items => setInventory(items))
+      .then(items => setItems(items))
   }, [])
   return (
     <div className="card">
