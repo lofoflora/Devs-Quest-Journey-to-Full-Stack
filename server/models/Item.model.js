@@ -1,34 +1,33 @@
 import { DataTypes } from "sequelize";
 import database from "../database.js";
 
-const Character = database.define("Character", {
+const Item = database.define("Item", {
   id: {
     type: DataTypes.INTEGER,
     autoIncrement: true,
     allowNull: false,
     primaryKey: true,
   },
+
   name: {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  specialization: {
-    type: DataTypes.STRING,
+
+  bonus: {
+    type: DataTypes.INTEGER,
     allowNull: false,
   },
-  level: {
+
+  malus: {
     type: DataTypes.INTEGER,
-    defaultValue: 1,
+    allowNull: false,
   },
-  experience: {
-    type: DataTypes.INTEGER,
-    defaultValue: 0,
-  },
-  money: {
+
+  price: {
     type: DataTypes.INTEGER,
     defaultValue: 0,
   },
 });
-//skills: ?, // TODO
 
-export default Character;
+export default Item;
