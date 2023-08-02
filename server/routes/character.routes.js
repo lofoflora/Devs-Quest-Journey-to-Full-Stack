@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { Character, Item } from "../models/index.js";
+import { Character, Item, Skills } from "../models/index.js";
 
 const router = Router();
 
@@ -37,8 +37,29 @@ router.get("/item", async (req, res) => {
 router.post("/item", async (req, res) => {
   try {
     const { name, bonus, malus, price } = req.body;
-    const NewItem = await Item.create({ name, bonus, malus, price });
-    res.json(NewItem);
+    const newItem = await Item.create({ name, bonus, malus, price });
+    res.json(newItem);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: err.message });
+  }
+});
+
+router.get("/skills", async (req, res) => {
+  try {
+    const skills = await Skills.findAll();
+    res.json(skills);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: err.message });
+  }
+});
+
+router.post("/skills", async (req, res) => {
+  try {
+    const { name, description, level } = req.body;
+    const newSkill = await Skills.create({ name, description, level });
+    res.json(newSkill);
   } catch (err) {
     console.error(err);
     res.status(500).json({ message: err.message });
