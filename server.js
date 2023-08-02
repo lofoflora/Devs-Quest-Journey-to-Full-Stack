@@ -2,13 +2,16 @@ import express from "express";
 import path from "path";
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
-import assetsRouter from "./assets-router.js"
+import assetsRouter from "./server/assets-router.js"
+import database from "./server/database.js"
+
+database.sync().then(() => { console.log(`Tables created!`); });
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const app = express();
-app.use("/", express.static(path.join(__dirname, "../public")));
+app.use("/", express.static(path.join(__dirname, "public")));
 app.use("/src", assetsRouter);
 
 app.get("/api/v1", (req, res) => {
@@ -18,7 +21,7 @@ app.get("/api/v1", (req, res) => {
 });
 
 app.get("/*", (_req, res) => {
-  res.sendFile(path.join(__dirname, "../public", "index.html"));
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 const { PORT = 5000 } = process.env;
