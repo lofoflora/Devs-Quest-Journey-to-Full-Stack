@@ -1,0 +1,305 @@
+Titre de la quête : "Le Trône du Code : La Quête Chaotique"
+Scénario : Le développeur junior est transporté dans un royaume parallèle appelé 
+"CodeTopia", où le code est magique, mais aussi parfois chaotique.
+ Pour réclamer sa place sur le "Trône du Code",
+  il devra passer par une série d'épreuves surprenantes et délirantes.
+
+Épreuve 1 : "HTML vs. CSS : Le Duel des Balises Ensorcelées" Le développeur 
+junior est plongé dans un duel mystique entre HTML et CSS. Il doit utiliser 
+les balises ensorcelées pour créer un site web éblouissant, 
+tout en évitant les bugs magiques qui pourraient le faire chanceler.
+
+Épreuve 2 : "PHP et JavaScript : Le Chaos Programmé"
+ Dans cette épreuve chaotique, le développeur junior est confronté
+  à des scénarios imprévisibles où PHP et JavaScript se combinent 
+  de manière inattendue. Il devra démêler le chaos programmé pour 
+  réussir à créer des fonctionnalités surprenantes.
+
+Épreuve 3 : "SQL Infernal : La Confrontation avec les Données Démoniaques"
+ Pour continuer sa quête, le développeur junior devra affronter des données démoniaques
+  dans une épreuve infernale de SQL. Il devra braver des requêtes
+   maléfiques pour obtenir les informations essentielles.
+
+Épreuve 4 : "React et Symfony : La Fusion des Mondes Parallèles"
+ Au cœur de cette épreuve interdimensionnelle, le développeur junior
+  devra naviguer entre les mondes parallèles de React et Symfony.
+   Il devra jongler avec ces frameworks étranges pour créer 
+   une application qui défie les lois de la programmation.
+
+Épreuve 5 : "Node.js Apocalypse : Survivre aux Tests Zombie"
+ Pour atteindre le "Trône du Code", le développeur junior devra 
+ faire face à une apocalypse de tests zombies avec Node.js.
+  Il devra lutter contre des erreurs terrifiantes pour prouver
+   que son code est résistant à toutes les épreuves.
+
+Épreuve Finale : "L'Apogée du Chaos Programmé : Défier le Code Omnipotent"
+ Enfin, le développeur junior devra se confronter au code omnipotent 
+ pour réclamer sa place sur le "Trône du Code". Il devra utiliser 
+ toutes ses compétences en HTML, CSS, PHP, JavaScript, 
+ bases de données, React, Symfony et Node.js pour surpasser ce défi ultime.
+
+Récompense : Si le développeur junior triomphe de toutes ces épreuves délirantes,
+ il obtiendra le titre de "Seigneur ou Dame du CodeTopia". Il aura le pouvoir de guider
+  le royaume à travers des solutions de développement uniques et innovantes,
+   tout en étant admiré pour sa maîtrise du chaos programmé.
+   
+voici une décomposition burlesque des 5 épreuves en 10 tâches loufoques pour votre quête "Le Trône du Code : La Quête Chaotique" avec 10 tâches par épreuve :
+
+Épreuve 1 : "HTML vs. CSS : Le Duel des Balises Ensorcelées"
+
+Tâche 1 : "Trouver la Potion de Balises Perdues"
+Explorer un mystérieux labyrinthe rempli de balises HTML égarées.
+Résoudre des énigmes pour retrouver la potion magique qui restaure l'ordre dans les balises.
+
+Tâche 2 : "Créer un Sortilège de Mise en Page Fantastique"
+Utiliser les pouvoirs de CSS pour créer une mise en page magnifique et envoûtante.
+Expérimenter avec les propriétés CSS pour donner vie au design.
+
+Tâche 3 : "Dompter les Divs Indomptables"
+Affronter les divs rebelles qui refusent de se plier aux règles CSS.
+Trouver des solutions pour rendre les divs dociles et obéissants.
+
+Tâche 4 : "Le Labyrinthe des Balises Égarées"
+Naviguer à travers un labyrinthe de balises HTML malicieusement mélangées.
+Rétablir l'ordre en plaçant chaque balise à sa place correcte.
+
+Tâche 5 : "La Confrontation avec le Dragon de CSS"
+Affronter un dragon géant créé entièrement en CSS.
+Utiliser les compétences en CSS pour vaincre le dragon et sauver le royaume du chaos.
+
+Tâche 6 : "Le Combat des Balises Interdites"
+S'engager dans un duel de balises interdites en HTML.
+Utiliser des balises alternatives pour éviter les erreurs et les pénalités.
+
+Tâche 7 : "La Danse Envoûtante des Flexbox"
+Maîtriser la danse envoûtante des Flexbox pour créer des mises en page fluides et flexibles.
+Réaliser des défis de mise en page pour montrer sa maîtrise des Flexbox.
+
+Tâche 8 : "Le Mystère des Pseudos-Éléments"
+Découvrir les mystérieux pseudos-éléments en CSS et leurs pouvoirs cachés.
+Utiliser les pseudos-éléments pour ajouter des effets spéciaux et magiques au design.
+
+Tâche 9 : "La Course des Classes Magiques"
+Participer à une course de classes magiques en HTML et CSS.
+Optimiser les classes pour obtenir la meilleure performance et vitesse.
+
+Tâche 10 : "Le Défi des Grilles Magiques"
+Créer des grilles magiques en CSS pour organiser et disposer les éléments.
+Résoudre des énigmes de mise en page en utilisant les grilles CSS.
+
+Épreuve 2 : "PHP et JavaScript : Le Chaos Programmé"
+
+Tâche 1 : "Le Labyrinthe des Erreurs Inattendues"
+Naviguer à travers un labyrinthe de bugs et d'erreurs inattendues en PHP et JavaScript.
+Trouver des solutions pour résoudre les bugs et avancer dans le labyrinthe.
+
+Tâche 2 : "La Potion de Compatibilité des Navigateurs"
+Créer une potion magique qui assure la compatibilité des scripts JavaScript avec tous les navigateurs.
+Tester la potion pour s'assurer qu'elle fonctionne correctement.
+
+Tâche 3 : "Le Défi des Variables Énigmatiques"
+Résoudre des énigmes complexes impliquant des variables mystérieuses en PHP et JavaScript.
+Utiliser les connaissances en programmation pour déchiffrer les variables et trouver les bonnes réponses.
+
+Tâche 4 : "Le Combat des Boucles Infinies"
+Repousser les boucles infinies qui menacent de bloquer le programme.
+Utiliser des stratégies pour éviter les boucles infinies et garantir un fonctionnement fluide du code.
+
+Tâche 5 : "Le Rite des Fonctions Magiques"
+Créer des fonctions magiques en PHP et JavaScript pour accomplir des tâches extraordinaires.
+Utiliser les fonctions pour automatiser des processus et rendre le code plus efficace.
+
+Tâche 6 : "La Confrontation avec le Dragon de PHP"
+Faire face à un dragon féroce créé en PHP.
+Utiliser les compétences en PHP pour résoudre les énigmes et vaincre le dragon.
+
+Tâche 7 : "L'Épreuve des Conditions Perplexes"
+Affronter des conditions complexes et déroutantes en PHP et JavaScript.
+Trouver des solutions pour gérer les conditions difficiles et obtenir les bons résultats.
+
+Tâche 8 : "Le Mystère des Objets Ensorcelés"
+Explorer les objets ensorcelés en PHP et JavaScript et comprendre leurs propriétés cachées.
+Utiliser les objets pour résoudre des problèmes de manière magique.
+
+Tâche 9 : "La Course aux Algorithmes Magiques"
+Participer à une course d'algorithmes en PHP et JavaScript.
+Optimiser les algorithmes pour obtenir les meilleures performances et gagner la course.
+Tâche 10 : "Le Défi des Tableaux Enchantés"
+
+Créer des tableaux enchantés en PHP et JavaScript pour organiser et manipuler des données.
+Résoudre des énigmes en utilisant les tableaux pour obtenir les bonnes réponses.
+
+Épreuve 3 : "MongoDB : La Confrontation avec le Mongol DB Genji Scan"
+
+Tâche 1 : "La Quête du Trésor Perdu de Mongo"
+S'embarquer dans une quête pour trouver un trésor caché dans la base de données MongoDB.
+Utiliser des requêtes pour localiser le trésor perdu.
+
+Tâche 2 : "L'Épreuve du Scan Maléfique de Genji Scan"
+Affronter le puissant Genji Scan, le mongol DB qui scanne tout et trouve les failles.
+Renforcer la sécurité de la base de données pour protéger les données des utilisateurs.
+
+Tâche 3 : "Le Combat des Collections Magiques"
+Créer des collections magiques en MongoDB pour stocker des ensembles de données.
+Manipuler les collections pour effectuer des opérations de base de données.
+
+Tâche 4 : "La Danse Ensorcelée des Documents"
+Maîtriser la danse ensorcelée des documents MongoDB.
+Utiliser des opérations CRUD pour gérer les documents de la base de données.
+
+Tâche 5 : "Le Rituel des Indexation Magiques"
+Mettre en place des indexations magiques en MongoDB pour accélérer les recherches.
+Optimiser les indexations pour améliorer les performances de la base de données.
+
+Tâche 6 : "Le Défi des Clés Étrangères"
+Gérer les clés étrangères dans MongoDB pour établir des relations entre les collections.
+Utiliser les clés étrangères pour effectuer des requêtes complexes.
+
+Tâche 7 : "La Confrontation avec le Dragon de MongoDB"
+Affronter un dragon redoutable créé en MongoDB.
+Résoudre les énigmes pour gagner la bataille contre le dragon.
+
+Tâche 8 : "Le Mystère des Agrégations Ensorcelantes"
+Découvrir les agrégations ensorcelantes en MongoDB et leur pouvoir de traitement de données.
+Utiliser les agrégations pour effectuer des opérations avancées sur les données.
+
+Tâche 9 : "La Course aux Filtres Magiques"
+Participer à une course de filtres magiques en MongoDB.
+Optimiser les filtres pour obtenir les résultats souhaités le plus rapidement possible.
+
+Tâche 10 : "Le Combat des Transactions Envoûtées"
+Maîtriser les transactions en MongoDB pour gérer les opérations multiples de manière cohérente.
+Appliquer les transactions pour garantir l'intégrité des données.
+
+Épreuve 4 : "React et Symfony : La Fusion des Mondes Parallèles"
+
+Tâche 1 : Création du Château en React
+Mettre en place la structure de base du projet React pour le château enchanté.
+Créer les composants React nécessaires pour les différentes parties du château (tour, pont-levis, donjon, etc.).
+Appliquer des styles Bootstrap pour rendre le château esthétiquement plaisant.
+
+Tâche 2 : Construction du Mur Symfony
+Configurer un projet Symfony pour la construction du mur de protection du royaume.
+Mettre en place les routes et les contrôleurs nécessaires pour gérer les différentes sections du mur.
+Utiliser des templates Twig pour afficher les informations sur le mur.
+
+Tâche 3 : Mise en Place de la Base de Données des Nains
+Créer le schéma de base de données pour stocker les cartes d'identité des nains.
+Définir les entités Symfony correspondantes pour représenter les nains dans la base de données.
+
+Tâche 4 : API pour le Contrôle de la Taille des Nains
+Créer une API Symfony permettant de gérer les informations sur la taille des nains.
+Mettre en place les endpoints pour créer, lire, mettre à jour et supprimer les cartes d'identité des nains.
+
+Tâche 5 : Inscription des Nains au Grand Concours des Catapultes
+Créer un formulaire React permettant d'inscrire les nains au concours.
+Utiliser l'API Symfony pour enregistrer les cartes d'identité des nains dans la base de données.
+
+Tâche 6 : Épreuve du Lancer à la Main
+Mettre en place un mini-jeu en React où les participants pourront lancer virtuellement les nains à la main.
+Afficher les scores de chaque participant et déterminer le gagnant du lancer à la main.
+
+Tâche 7 : Défi de la Fronde
+Ajouter une section dans le château React pour le défi de la fronde.
+Permettre aux participants de tester leurs compétences avec une simulation de lancer à la fronde.
+
+
+Tâche 8 : Préparation de la Catapulte
+Créer un espace dans le château pour préparer la grande catapulte.
+Permettre aux participants de charger virtuellement les nains dans la catapulte
+
+Tâche 9 : Épreuve Finale - Lancer avec la Catapulte
+Organiser l'épreuve finale où les participants lanceront réellement les nains avec la catapulte.
+Prendre en compte la distance parcourue par chaque nain pour déterminer le gagnant.
+
+Tâche 10 : Cérémonie de Clôture et Remise des Prix
+Organiser une cérémonie de clôture pour féliciter tous les participants.
+Remettre des prix et récompenses aux champions du contrôle des nains et des épreuves des catapultes.
+Célébrer l'esprit compétitif et créatif de tous les développeurs juniors participants.
+
+Épreuve 5 : "Node.js Apocalypse : Survivre aux Tests Zombie"
+
+Tâche 1 : "Le Test Zombie : Survivre à l'Invasion"
+Faire face à une horde de tests zombie qui menacent de paralyser l'application Node.js.
+Réparer les tests défectueux pour restaurer l'ordre et la stabilité.
+
+Tâche 2 : "Le Rituel de Passage à Node.js"
+Accomplir un rituel mystique pour devenir un développeur Node.js certifié.
+Créer une application simple en Node.js pour prouver sa maîtrise.
+
+Tâche 3 : "Le Combat des Routes Ensorcelées"
+Créer des routes ensorcelées en utilisant Express.js pour gérer les requêtes HTTP.
+Utiliser les routes pour diriger le trafic vers les différentes fonctionnalités de l'application.
+
+Tâche 4 : "La Confrontation avec le Dragon de Node.js"
+Affronter un dragon redoutable créé en Node.js.
+Utiliser les compétences en Node.js pour résoudre les énigmes et vaincre le dragon.
+
+Tâche 5 : "La Danse Magique des Middleware"
+Maîtriser la danse magique des middleware en Express.js.
+Utiliser les middleware pour ajouter des fonctionnalités spéciales à l'application.
+
+Tâche 6 : "Le Défi des Fonctions Asynchrones"
+Surmonter le défi des fonctions asynchrones en Node.js.
+Utiliser des méthodes pour gérer efficacement les opérations asynchrones.
+
+Tâche 7 : "Le Mystère des Promesses Envoûtantes"
+Découvrir les promesses en Node.js et leur pouvoir de gestion des opérations asynchrones.
+Utiliser les promesses pour simplifier le code asynchrone et éviter les pièges.
+
+Tâche 8 : "La Course aux Modules Fantastiques"
+Participer à une course de modules fantastiques en Node.js.
+Utiliser les modules pour organiser le code et rendre l'application plus maintenable.
+
+Tâche 9 : "Le Rite des Tests End-to-End Ensorcelants"
+Mettre en place des tests end-to-end ensorcelants pour garantir le bon fonctionnement de l'application.
+Exécuter les tests pour s'assurer que toutes les fonctionnalités sont correctement implémentées.
+
+Tâche 10 : "Le Combat des API Enchantées"
+Créer des API enchantées en utilisant Express.js pour communiquer avec l'application.
+Tester les API pour s'assurer qu'elles répondent correctement aux requêtes.
+Dans cette épreuve apocalyptique, les développeurs devront faire face à des tests zombies et surmonter des défis magiques en Node.js pour survivre à l'apocalypse des tests ! Que les développeurs deviennent de véritables sorciers de Node.js et triomphent dans cette épreuve ensorcelante !
+
+Épreuve Finale : "Le Duel Épique avec le Grand Chef Full Stack"
+
+Tâche 1 : "L'Entraînement au Maniement de la Fléchette Ensorcelée"
+Apprendre l'art du lancer de fléchette ensorcelée pour se préparer au duel.
+S'entraîner à viser avec précision pour toucher le Grand Chef Full Stack.
+
+Tâche 2 : "Le Rituel d'Invocation de l'Étoile de Ninja Magique"
+Maîtriser le rituel d'invocation pour appeler l'étoile de ninja magique.
+Apprendre à utiliser l'étoile de ninja avec adresse et rapidité.
+
+Tâche 3 : "Le Défi du Clavier d'Ordinateur Enchanté"
+Affronter le clavier d'ordinateur enchanté du Grand Chef Full Stack.
+Résoudre les énigmes et les épreuves lancées par le clavier pour déverrouiller l'accès au duel final.
+
+Tâche 4 : "La Course contre la Montre pour Atteindre le Grand Chef Full Stack"
+Traverser un labyrinthe ensorcelé pour atteindre la salle du duel.
+Éviter les pièges et surmonter les obstacles pour arriver à temps.
+
+Tâche 5 : "Le Duel Épique avec le Grand Chef Full Stack"
+Se confronter au Grand Chef Full Stack dans un duel épique.
+Utiliser les compétences en développement web pour attaquer et contrer les attaques du Chef.
+
+Tâche 6 : "Le Sortilège de Debuggage pour Neutraliser les Bugs Magiques"
+Utiliser le sortilège de debuggage pour neutraliser les bugs magiques lancés par le Chef.
+Assurer que l'application reste stable et fonctionnelle pendant le duel.
+
+Tâche 7 : "La Danse Envoûtante des Frameworks"
+Maîtriser la danse envoûtante des frameworks pour augmenter la puissance du code.
+Utiliser les frameworks de développement web pour renforcer les attaques et les défenses.
+
+Tâche 8 : "Le Mystère des Algorithmes Ensorcelés"
+Découvrir les algorithmes ensorcelés utilisés par le Chef pour défendre son code.
+Trouver les contre-mesures pour déjouer les tactiques du Chef.
+
+Tâche 9 : "La Course contre la Fatigue pour Rester Concentré"
+Garder son calme et sa concentration malgré la fatigue du duel.
+Utiliser la magie de la résilience pour rester fort jusqu'à la fin.
+
+Tâche 10 : "Le Coup Final pour Vaincre le Grand Chef Full Stack"
+Lancer le coup final avec succès en utilisant la fléchette, l'étoile de ninja et le clavier.
+Vaincre le Grand Chef Full Stack et devenir le nouveau maître du développement web Full Stack !
+Dans cette épreuve ultime, les développeurs devront démontrer leurs compétences en maniement d'armes magiques et en développement web pour vaincre le redoutable Grand Chef Full Stack. Que le duel épique commence et que le développeur le plus habile l'emporte dans cette quête humoristique et ensorcelante !
+.
