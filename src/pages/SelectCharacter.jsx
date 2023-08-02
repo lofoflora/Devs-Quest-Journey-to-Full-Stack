@@ -4,7 +4,7 @@ function SelectCharacter() {
   const [characters, setCharacters] = useState([])
 
   useEffect(() => {
-    fetch('/api/v1/characters').then(characters => setCharacters(characters))
+    fetch('/api/characters').then(characters => setCharacters(characters))
   }, [])
   
   return (
