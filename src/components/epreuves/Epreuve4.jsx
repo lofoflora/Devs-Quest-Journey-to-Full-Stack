@@ -1,0 +1,191 @@
+import React, { useState } from 'react';
+import Question from '../Question';
+
+const Epreuve4 = ({ onAnswer }) => {
+  const tasks = [
+    {
+      title: "Tâche 1 : Création du Château en React",
+      summary: "Mettre en place la structure de base du projet React pour le château enchanté. Créer les composants React nécessaires pour les différentes parties du château (tour, pont-levis, donjon, etc.). Appliquer des styles Bootstrap pour rendre le château esthétiquement plaisant."
+    },
+    {
+      title: "Tâche 2 : Construction du Mur Symfony",
+      summary: "Configurer un projet Symfony pour la construction du mur de protection du royaume. Mettre en place les routes et les contrôleurs nécessaires pour gérer les différentes sections du mur. Utiliser des templates Twig pour afficher les informations sur le mur."
+    },
+    {
+      title: "Tâche 3 : Mise en Place de la Base de Données des Nains",
+      summary: "Créer le schéma de base de données pour stocker les cartes d'identité des nains. Définir les entités Symfony correspondantes pour représenter les nains dans la base de données."
+    },
+    {
+      title: "Tâche 4 : API pour le Contrôle de la Taille des Nains",
+      summary: "Créer une API Symfony permettant de gérer les informations sur la taille des nains. Mettre en place les endpoints pour créer, lire, mettre à jour et supprimer les cartes d'identité des nains."
+    },
+    {
+      title: "Tâche 5 : Inscription des Nains au Grand Concours des Catapultes",
+      summary: "Créer un formulaire React permettant d'inscrire les nains au concours. Utiliser l'API Symfony pour enregistrer les cartes d'identité des nains dans la base de données."
+    },
+    {
+      title: "Tâche 6 : Épreuve du Lancer à la Main",
+      summary: "Mettre en place un mini-jeu en React où les participants pourront lancer virtuellement les nains à la main. Afficher les scores de chaque participant et déterminer le gagnant du lancer à la main."
+    },
+    {
+      title: "Tâche 7 : Défi de la Fronde",
+      summary: "Ajouter une section dans le château React pour le défi de la fronde. Permettre aux participants de tester leurs compétences avec une simulation de lancer à la fronde."
+    },
+    {
+      title: "Tâche 8 : Préparation de la Catapulte",
+      summary: "Créer un espace dans le château pour préparer la grande catapulte. Permettre aux participants de charger virtuellement les nains dans la catapulte."
+    },
+    {
+      title: "Tâche 9 : Épreuve Finale - Lancer avec la Catapulte",
+      summary: "Organiser l'épreuve finale où les participants lanceront réellement les nains avec la catapulte. Prendre en compte la distance parcourue par chaque nain pour déterminer le gagnant."
+    },
+    {
+      title: "Tâche 10 : Cérémonie de Clôture et Remise des Prix",
+      summary: "Organiser une cérémonie de clôture pour féliciter tous les participants. Remettre des prix et récompenses aux champions du contrôle des nains et des épreuves des catapultes. Célébrer l'esprit compétitif et créatif de tous les développeurs juniors participants."
+    }
+  ];
+
+  const questions = [
+    {
+      text: 'Question 1 : Quelle est la différence entre "find" et "findOne" dans MongoDB ?',
+      options: [
+        'a) "find" est utilisé pour récupérer plusieurs documents qui correspondent à une requête, tandis que "findOne" renvoie uniquement le premier document correspondant à la requête.',
+        'b) "findOne" est utilisé pour récupérer plusieurs documents qui correspondent à une requête, tandis que "find" renvoie uniquement le premier document correspondant à la requête.',
+        'c) "find" est utilisé pour récupérer tous les documents de la collection, tandis que "findOne" renvoie uniquement un document spécifique.',
+        'd) "findOne" est utilisé pour récupérer tous les documents de la collection, tandis que "find" renvoie uniquement un document spécifique.'
+      ],
+      correctOption: 'a) "find" est utilisé pour récupérer plusieurs documents qui correspondent à une requête, tandis que "findOne" renvoie uniquement le premier document correspondant à la requête.'
+    },
+    {
+      text: 'Question 2 : Quelle méthode est utilisée pour ajouter un index à une collection MongoDB ?',
+      options: [
+        'a) addIndex()',
+        'b) createIndex()',
+        'c) index()',
+        'd) insertIndex()'
+      ],
+      correctOption: 'b) createIndex()'
+    },
+    {
+      text: 'Question 3 : Quelle méthode est utilisée pour supprimer un document dans MongoDB en utilisant un critère spécifique ?',
+      options: [
+        'a) remove()',
+        'b) deleteOne()',
+        'c) deleteDocument()',
+        'd) removeDocument()'
+      ],
+      correctOption: 'b) deleteOne()'
+    },
+    {
+      text: 'Question 4 : Comment trier les résultats d\'une requête MongoDB par ordre décroissant ?',
+      options: [
+        'a) { sort: "desc" }',
+        'b) { sort: -1 }',
+        'c) { sort: "asc" }',
+        'd) { sort: 1 }'
+      ],
+      correctOption: 'b) { sort: -1 }'
+    },
+    {
+      text: 'Question 5 : Quelle méthode est utilisée pour mettre à jour un document existant dans MongoDB ?',
+      options: [
+        'a) updateOne()',
+        'b) update()',
+        'c) modify()',
+        'd) change()'
+      ],
+      correctOption: 'a) updateOne()'
+    },
+    {
+      text: 'Question 6 : Quelle est la différence entre "insertOne" et "insertMany" dans MongoDB ?',
+      options: [
+        'a) "insertOne" est utilisé pour insérer un seul document dans la collection, tandis que "insertMany" insère plusieurs documents à la fois.',
+        'b) "insertMany" est utilisé pour insérer un seul document dans la collection, tandis que "insertOne" insère plusieurs documents à la fois.',
+        'c) "insertOne" est utilisé pour insérer des documents dans une collection de base de données, tandis que "insertMany" est utilisé pour insérer des documents dans une collection MongoDB.',
+        'd) "insertMany" est utilisé pour insérer des documents dans une collection de base de données, tandis que "insertOne" est utilisé pour insérer des documents dans une collection MongoDB.'
+      ],
+      correctOption: 'a) "insertOne" est utilisé pour insérer un seul document dans la collection, tandis que "insertMany" insère plusieurs documents à la fois.'
+    },
+    {
+      text: 'Question 7 : Quelle méthode est utilisée pour effectuer une jointure (join) entre deux collections dans MongoDB ?',
+      options: [
+        'a) aggregate()',
+        'b) lookup()',
+        'c) join()',
+        'd) combine()'
+      ],
+      correctOption: 'b) lookup()'
+    },
+    {
+      text: 'Question 8 : Quelle est la fonction utilisée pour récupérer le nombre total de documents dans une collection MongoDB ?',
+      options: [
+        'a) count()',
+        'b) getCount()',
+        'c) totalDocuments()',
+        'd) length()'
+      ],
+      correctOption: 'a) count()'
+    },
+    {
+      text: 'Question 9 : Quelle méthode est utilisée pour limiter le nombre de documents renvoyés par une requête MongoDB ?',
+      options: [
+        'a) limit()',
+        'b) maxDocuments()',
+        'c) getLimit()',
+        'd) setLimit()'
+      ],
+      correctOption: 'a) limit()'
+    },
+    {
+      text: 'Question 10 : Quelle est la méthode utilisée pour créer un index unique dans MongoDB ?',
+      options: [
+        'a) uniqueIndex()',
+        'b) createUniqueIndex()',
+        'c) index(unique)',
+        'd) ensureIndex()'
+      ],
+      correctOption: 'b) createUniqueIndex()'
+    }
+  ];
+
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [showSummary, setShowSummary] = useState(true);
+
+  const handleAnswer = (selectedOption) => {
+    if (showSummary) {
+      setShowSummary(false);
+    }
+
+    const currentQuestion = questions[currentQuestionIndex];
+    const isCorrect = selectedOption === currentQuestion.correctOption;
+    onAnswer(isCorrect);
+
+    setCurrentQuestionIndex((prev) => prev + 1);
+  };
+
+  const currentQuestion = questions[currentQuestionIndex];
+  const currentTask = tasks[currentQuestionIndex];
+
+  return (
+    <div>
+      {showSummary ? (
+        <div>
+          <h2>{currentTask.title}</h2>
+          <p>{currentTask.summary}</p>
+          <button onClick={() => setShowSummary(false)}>Commencer l'épreuve</button>
+        </div>
+      ) : (
+        <div>
+          <h3>{currentTask.title}</h3>
+          <Question
+            question={currentQuestion}
+            options={currentQuestion.options}
+            onAnswer={handleAnswer}
+          />
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Epreuve4;

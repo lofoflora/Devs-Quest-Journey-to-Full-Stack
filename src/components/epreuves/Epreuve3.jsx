@@ -1,0 +1,193 @@
+import React, { useState } from 'react';
+import Question from '../Question';
+
+const Epreuve3 = ({ onAnswer }) => {
+  const tasks = [
+    {
+      title: "Tâche 1 : \"La Quête du Trésor Perdu de Mongo\"",
+      summary: "S'embarquer dans une quête pour trouver un trésor caché dans la base de données MongoDB. Utiliser des requêtes pour localiser le trésor perdu."
+    },
+    {
+      title: "Tâche 2 : \"L'Épreuve du Scan Maléfique de Genji Scan\"",
+      summary: "Affronter le puissant Genji Scan, le mongol DB qui scanne tout et trouve les failles. Renforcer la sécurité de la base de données pour protéger les données des utilisateurs."
+    },
+    {
+      title: "Tâche 3 : \"Le Combat des Collections Magiques\"",
+      summary: "Créer des collections magiques en MongoDB pour stocker des ensembles de données. Manipuler les collections pour effectuer des opérations de base de données."
+    },
+    {
+      title: "Tâche 4 : \"La Danse Ensorcelée des Documents\"",
+      summary: "Maîtriser la danse ensorcelée des documents MongoDB. Utiliser des opérations CRUD pour gérer les documents de la base de données."
+    },
+    {
+      title: "Tâche 5 : \"Le Rituel des Indexation Magiques\"",
+      summary: "Mettre en place des indexations magiques en MongoDB pour accélérer les recherches. Optimiser les indexations pour améliorer les performances de la base de données."
+    },
+    {
+      title: "Tâche 6 : \"Le Défi des Clés Étrangères\"",
+      summary: "Gérer les clés étrangères dans MongoDB pour établir des relations entre les collections. Utiliser les clés étrangères pour effectuer des requêtes complexes."
+    },
+    {
+      title: "Tâche 7 : \"La Confrontation avec le Dragon de MongoDB\"",
+      summary: "Affronter un dragon redoutable créé en MongoDB. Résoudre les énigmes pour gagner la bataille contre le dragon."
+    },
+    {
+      title: "Tâche 8 : \"Le Mystère des Agrégations Ensorcelantes\"",
+      summary: "Découvrir les agrégations ensorcelantes en MongoDB et leur pouvoir de traitement de données. Utiliser les agrégations pour effectuer des opérations avancées sur les données."
+    },
+    {
+      title: "Tâche 9 : \"La Course aux Filtres Magiques\"",
+      summary: "Participer à une course de filtres magiques en MongoDB. Optimiser les filtres pour obtenir les résultats souhaités le plus rapidement possible."
+    },
+    {
+      title: "Tâche 10 : \"Le Combat des Transactions Envoûtées\"",
+      summary: "Maîtriser les transactions en MongoDB pour gérer les opérations multiples de manière cohérente. Appliquer les transactions pour garantir l'intégrité des données."
+    }
+  ];
+
+  const questions = [
+    {
+      text: 'Question 1 : "Quelle est la différence entre "find" et "findOne" dans MongoDB ?"',
+      options: [
+        '"find" est utilisé pour récupérer plusieurs documents qui correspondent à une requête, tandis que "findOne" renvoie uniquement le premier document correspondant à la requête.',
+        '"findOne" est utilisé pour récupérer plusieurs documents qui correspondent à une requête, tandis que "find" renvoie uniquement le premier document correspondant à la requête.',
+        '"find" est utilisé pour récupérer tous les documents de la collection, tandis que "findOne" renvoie uniquement un document spécifique.',
+        '"findOne" est utilisé pour récupérer tous les documents de la collection, tandis que "find" renvoie uniquement un document spécifique.'
+      ],
+      correctOption: '"find" est utilisé pour récupérer plusieurs documents qui correspondent à une requête, tandis que "findOne" renvoie uniquement le premier document correspondant à la requête.'
+    },
+    {
+      text: 'Question 2 : "Quelle méthode est utilisée pour ajouter un index à une collection MongoDB ?"',
+      options: [
+        'addIndex()',
+        'createIndex()',
+        'index()',
+        'insertIndex()'
+      ],
+      correctOption: 'createIndex()'
+    },
+    {
+      text: 'Question 3 : "Quelle méthode est utilisée pour supprimer un document dans MongoDB en utilisant un critère spécifique ?"',
+      options: [
+        'remove()',
+        'deleteOne()',
+        'deleteDocument()',
+        'removeDocument()'
+      ],
+      correctOption: 'deleteOne()'
+    },
+    {
+      text: 'Question 4 : "Comment trier les résultats d\'une requête MongoDB par ordre décroissant ?"',
+      options: [
+        '{ sort: "desc" }',
+        '{ sort: -1 }',
+        '{ sort: "asc" }',
+        '{ sort: 1 }'
+      ],
+      correctOption: '{ sort: -1 }'
+    },
+    {
+      text: 'Question 5 : "Quelle méthode est utilisée pour mettre à jour un document existant dans MongoDB ?"',
+      options: [
+        'updateOne()',
+        'update()',
+        'modify()',
+        'change()'
+      ],
+      correctOption: 'updateOne()'
+    },
+    {
+      text: 'Question 6 : "Quelle est la différence entre "insertOne" et "insertMany" dans MongoDB ?"',
+      options: [
+        '"insertOne" est utilisé pour insérer un seul document dans la collection, tandis que "insertMany" insère plusieurs documents à la fois.',
+        '"insertMany" est utilisé pour insérer un seul document dans la collection, tandis que "insertOne" insère plusieurs documents à la fois.',
+        '"insertOne" est utilisé pour insérer des documents dans une collection de base de données, tandis que "insertMany" est utilisé pour insérer des documents dans une collection MongoDB.',
+        '"insertMany" est utilisé pour insérer des documents dans une collection de base de données, tandis que "insertOne" est utilisé pour insérer des documents dans une collection MongoDB.'
+      ],
+      correctOption: '"insertOne" est utilisé pour insérer un seul document dans la collection, tandis que "insertMany" insère plusieurs documents à la fois.'
+    },
+    {
+      text: 'Question 7 : "Quelle méthode est utilisée pour effectuer une jointure (join) entre deux collections dans MongoDB ?"',
+      options: [
+        'aggregate()',
+        'lookup()',
+        'join()',
+        'combine()'
+      ],
+      correctOption: 'lookup()'
+    },
+    {
+      text: 'Question 8 : "Quelle est la fonction utilisée pour récupérer le nombre total de documents dans une collection MongoDB ?"',
+      options: [
+        'count()',
+        'getCount()',
+        'totalDocuments()',
+        'length()'
+      ],
+      correctOption: 'count()'
+    },
+    {
+      text: 'Question 9 : "Quelle méthode est utilisée pour limiter le nombre de documents renvoyés par une requête MongoDB ?"',
+      options: [
+        'limit()',
+        'maxDocuments()',
+        'getLimit()',
+        'setLimit()'
+      ],
+      correctOption: 'limit()'
+    },
+    {
+      text: 'Question 10 : "Quelle est la méthode utilisée pour créer un index unique dans MongoDB ?"',
+      options: [
+        'uniqueIndex()',
+        'createUniqueIndex()',
+        'index(unique)',
+        'ensureIndex()'
+      ],
+      correctOption: 'createUniqueIndex()'
+    }
+  ];
+
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [showSummary, setShowSummary] = useState(true);
+
+  const handleAnswer = (selectedOption) => {
+    if (showSummary) {
+      setShowSummary(false);
+    }
+
+    const currentQuestion = questions[currentQuestionIndex];
+    const isCorrect = selectedOption === currentQuestion.correctOption;
+    onAnswer(isCorrect);
+
+    // Passer à la question suivante
+    setCurrentQuestionIndex((prev) => prev + 1);
+  };
+
+  const currentQuestion = questions[currentQuestionIndex];
+  const currentTask = tasks[currentQuestionIndex];
+
+  return (
+    <div>
+      {showSummary ? (
+        <div>
+          <h2>Épreuve 3 : "MongoDB : La Confrontation avec le Mongol DB Genji Scan"</h2>
+          <p>{currentTask.summary}</p>
+          <button onClick={() => setShowSummary(false)}>Commencer l'épreuve</button>
+        </div>
+      ) : (
+        <div>
+          <h3>{currentTask.title}</h3>
+          <h3>{currentQuestion.text}</h3>
+          <Question
+            question={currentQuestion}
+            options={currentQuestion.options}
+            onAnswer={handleAnswer}
+          />
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Epreuve3;
