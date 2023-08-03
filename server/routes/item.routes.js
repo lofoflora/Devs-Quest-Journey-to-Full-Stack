@@ -5,8 +5,8 @@ const router = Router();
 
 router.get("/", async (req, res) => {
   try {
-    const characters = await Character.findAll();
-    res.json(characters);
+    const items = await Item.findAll();
+    res.json(items);
   } catch (err) {
     console.error(err);
     res.status(500).json({ message: err.message });
@@ -15,9 +15,9 @@ router.get("/", async (req, res) => {
 
 router.post("/", async (req, res) => {
   try {
-    const { name, specialization } = req.body;
-    const newCharacter = await Character.create({ name, specialization });
-    res.json(newCharacter);
+    const { name, description } = req.body;
+    const newItem = await Item.create({ name, description });
+    res.json(newItem);
   } catch (err) {
     console.error(err);
     res.status(500).json({ message: err.message });
