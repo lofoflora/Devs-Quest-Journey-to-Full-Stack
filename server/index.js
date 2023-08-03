@@ -6,6 +6,7 @@ import { dirname } from "path";
 // Routes
 import routesCharacter from "./routes/character.routes.js";
 import routesItem from "./routes/item.routes.js";
+import routesSkills from "./routes/skill.routes.js"
 
 // Database
 import database from "./database.js";
@@ -30,6 +31,7 @@ app.use("/", (req, res, next) => {
 // Routes used
 app.use("/api/characters", routesCharacter);
 app.use("/api/items", routesItem);
+app.use("/api/skills", routesSkills);
 
 app.listen(PORT, () =>
   console.log("Backend started at http://localhost:" + PORT)
