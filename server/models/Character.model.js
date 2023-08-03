@@ -31,6 +31,5 @@ const Character = database.define("Character", {
     defaultValue: 0,
   },
 });
-//skills: ?, // TODO
 
 export default Character;

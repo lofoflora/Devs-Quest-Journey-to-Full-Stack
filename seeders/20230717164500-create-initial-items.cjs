@@ -36,4 +36,3 @@ module.exports = {
     await queryInterface.bulkDelete('Characters', null, {});
   }
 };
- 
