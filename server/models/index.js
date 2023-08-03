@@ -1,17 +1,14 @@
-import database from "../database.js";
-import Character from "./Character.model.js";
-import Item from "./Item.model.js";
-import Skills from "./Skill.model.js";
-import CharacterItem from "./CharacterItem.model.js";
+import database from "../database.js"
+import Character from './Character.model.js';
+import Item from './Item.model.js';
+import CharacterItem from './CharacterItem.model.js';
+import Skill from './Skill.model.js';
+import Task from './Task.model.js';
 
-// Mettez ici tous les modèles et les relations
+// Define relationships
 Character.belongsToMany(Item, { through: CharacterItem });
 Item.belongsToMany(Character, { through: CharacterItem });
 
-export { Character };
-export { Item };
-export { Skills };
+export { Character, Item, CharacterItem, Skill, Task };
 
-database.sync().then(() => {
-  console.log(`Tables created.`);
-});
+database.sync().then(() => { console.log(`Tables created.`); });

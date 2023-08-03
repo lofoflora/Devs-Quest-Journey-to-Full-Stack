@@ -8,12 +8,10 @@ const Item = database.define("Item", {
     allowNull: false,
     primaryKey: true,
   },
-
   name: {
     type: DataTypes.STRING,
     allowNull: false,
   },
-
   description: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -32,6 +30,9 @@ const Item = database.define("Item", {
   price: {
     type: DataTypes.INTEGER,
     defaultValue: 0,
+  },
+  skills: {
+    type: DataTypes.JSON, // we store skills and their levels in a JSON object
   },
 });
 

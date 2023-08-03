@@ -4,15 +4,10 @@ import { fileURLToPath } from "url";
 import { dirname } from "path";
 
 // Routes
-import routesCharacter from "./routes/character.routes.js";
-import routesItem from "./routes/item.routes.js";
+import routesCharacter from "./routes/character.routes.js"
+import routesItem from "./routes/item.routes.js"
 import routesSkills from "./routes/skill.routes.js"
-
-// Database
-import database from "./database.js";
-database.sync().then(() => {
-  console.log(`Tables created!`);
-});
+import routesTask from "./routes/task.routes.js"
 
 // Middlewares
 const __filename = fileURLToPath(import.meta.url);
@@ -29,9 +24,10 @@ app.use("/", (req, res, next) => {
 });
 
 // Routes used
-app.use("/api/characters", routesCharacter);
-app.use("/api/items", routesItem);
-app.use("/api/skills", routesSkills);
+app.use('/api/characters', routesCharacter)
+app.use('/api/items', routesItem)
+app.use('/api/skills', routesSkills)
+app.use('/api/tasks', routesTask)
 
 app.listen(PORT, () =>
   console.log("Backend started at http://localhost:" + PORT)

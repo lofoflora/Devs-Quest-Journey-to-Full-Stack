@@ -8,7 +8,6 @@ const Skills = database.define("Skills", {
     allowNull: false,
     primaryKey: true,
   },
-
   name: {
     type: DataTypes.STRING,
     allowNull: false,
