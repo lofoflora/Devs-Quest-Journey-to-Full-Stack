@@ -5,6 +5,7 @@ import CreateItem from './pages/CreateItem';
 import GameBoard from './pages/GameBoard'
 import { useNavigate } from 'react-router';
 import "./app.css"
+import Question from './pages/Question';
 
 function App() {
   const navigate = useNavigate();
@@ -28,6 +29,7 @@ function App() {
         <Route path="/character/:id" element={<GameBoard />} />
         <Route path="/create-character" element={<CreateCharacter />} />
         <Route path="/create-item" element={<CreateItem/>} />
+        <Route path="/question" element={<Question/>} />
       </Routes>
     </>
   )
