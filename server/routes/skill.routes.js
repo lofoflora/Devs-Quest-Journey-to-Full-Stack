@@ -3,7 +3,7 @@ import { Skills } from "../models/index.js";
 
 const router = Router();
 
-router.get("/skills", async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     const skills = await Skills.findAll();
     res.json(skills);
@@ -13,7 +13,7 @@ router.get("/skills", async (req, res) => {
   }
 });
 
-router.post("/skills", async (req, res) => {
+router.post("/", async (req, res) => {
   try {
     const { name, description, level } = req.body;
     const newSkill = await Skills.create({ name, description, level });
