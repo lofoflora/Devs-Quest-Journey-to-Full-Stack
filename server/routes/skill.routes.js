@@ -1,11 +1,11 @@
 import { Router } from "express";
-import { Skills } from "../models/index.js";
+import { Skill } from "../models/index.js";
 
 const router = Router();
 
 router.get("/", async (req, res) => {
   try {
-    const skills = await Skills.findAll();
+    const skills = await Skill.findAll();
     res.json(skills);
   } catch (err) {
     console.error(err);
